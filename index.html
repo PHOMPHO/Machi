@@ -1,0 +1,447 @@
+<style>
+body {
+	background: url("http://i.imgur.com/5KfE6wG.jpg");
+	margin: 20px;
+	overflow: hidden;
+}
+body, td, p {
+	font-family: ms gothic;
+	font-size: 7.5pt;
+	color: #666;
+}
+table {
+	display: none;
+}
+#THIS_ONE table {
+	display: table;
+}
+a, a:visited {
+	text-decoration: none;
+	color: #9AC4C2;
+}
+a:hover {
+	color: #E0D4E7;
+	cursor: help;
+}
+i {
+	color: #888;
+}
+strong {
+	font: bold 6pt arial;
+	text-transform: uppercase;
+}
+#content h1 {
+	font: 10pt ms gothic;
+	color: #c6bb98;
+	padding-left: 10px;
+	padding-top: 5px;
+	line-height: 20px;
+	background: #fff9c5;
+	letter-spacing: 5px;
+	border-top: 1px solid #ebeabf;
+	border-right: 1px solid #e0dda9;
+	border-bottom: 1px solid #ebeabf;
+	border-left: 1px solid #e0dda9;
+}
+#THIS_ONE {
+	width: 1000px;
+	height: 100%;
+	background: url("http://i.imgur.com/o6xTHcK.png");
+	margin-left: 150px;
+}
+#main {
+	width: 500px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+#headercontainer {
+	width: 100%;
+	display: table;
+}
+#header {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+#header #title {
+	display: inline-block;
+	text-align: center;
+}
+#header h1 {
+	font: 40pt ms gothic;
+	font-style: oblique;
+	font-weight: normal;
+}
+#header .title {
+	top: 0;
+	left: 0;
+	color: #fea9d7;
+	z-index: 1000;
+}
+#header .shadow {
+	top: 2px;
+	left: 2px;
+	color: #e45bac;
+	z-index: 999;
+}
+#header .hidden {
+	margin-right: 3px;
+	visibility: hidden;
+}
+#header #descr {
+	color: #666;
+	margin-left: 1px;
+}
+#header #descr a, #descr a:visited {
+	display: inline-block;
+	font-size: 7pt;
+	font-style: oblique;
+	color: #D3C9D9;
+}
+#descr p {
+	color: #e45bac;
+	font-size: 10pt;
+	margin-bottom: -2px;
+	margin-top: -10px;
+	background: #fff;
+}
+#header #descr a:hover {
+	color: #CAE0DF;
+}
+#contentcontainer {
+	display: inline-block;
+	background: none;
+}
+#content {
+	width: 300px;
+	height: 60%;
+	overflow: hidden;
+}
+.section1 {
+	width: 300px;
+	height: 100%;
+	line-height: 13px;
+	overflow: auto;
+	text-align: left;
+	background: #f1f8f0;
+}
+.section2 {
+	width: 300px;
+	height: 100%;
+	line-height: 13px;
+	overflow: auto;
+	text-align: left;
+	background: #ddc5ea;
+}
+.section3 {
+	width: 300px;
+	height: 100%;
+	line-height: 13px;
+	overflow: auto;
+	text-align: left;
+	background: #c38edc;
+}
+.section4 {
+	width: 300px;
+	height: 100%;
+	line-height: 13px;
+	overflow: auto;
+	text-align: left;
+	background: #fff;
+}
+#teal {
+	color: #58a06c;
+	background: #c5feeb;
+	border: 1px solid #6ecda0;
+}
+#teal a, #teal a:visited {
+	text-decoration: none;
+	color: #7d7d7d;
+}
+#teal a:hover {
+	color: #6ecda0;
+}
+#blue {
+	color: #5d6a94;
+	background: #c5cbff;
+	border: 1px solid #6f83cf;
+}
+#blue a, #blue a:visited {
+	text-decoration: none;
+	color: #7d7d7d;
+}
+#blue a:hover {
+	color: #6f83cf;
+}
+#purple {
+	color: #554dab;
+	background: #dec5ff;
+	border: 1px solid #8b6dcd;
+}
+#purple a, #purple a:visited {
+	text-decoration: none;
+	color: #7d7d7d;
+}
+#purple a:hover {
+	color: #8b6dcd;
+}
+.pad {
+	padding: 30px;
+}
+.section-webkit-scrollbar {
+	width: 4px;
+	height: 1px;
+	background: url("http://i.imgur.com/3PlwuWt.png");
+}
+.section-webkit-scrollbar-thumb {
+	background: #bbb;
+	visibility: hidden;
+}
+.section:hover-webkit-scrollbar-thumb {
+	visibility: visible;
+}
+ul {
+	list-style-type: none;
+	text-align: left;
+}
+li {
+	background: url("http://i.imgur.com/5JRJLOj.gif") -5px 1px no-repeat;
+	padding: 0px 0 0px 10px;
+}
+img.left {
+	float: left;
+	margin: 5px;
+}
+img.right {
+	float: right;
+	margin: 5px;
+}
+.button {
+	display: inline-block;
+	vertical-align: top;
+	margin: 4px;
+}
+.button textarea {
+	width: 88px;
+	height: 18px;
+	margin-top: 3px;
+	font: 10pt ms gothic;
+	color: #666;
+	line-height: 0.5em;
+	letter-spacing: -3px;
+	overflow: hidden;
+	background: #addde7;
+	border: 1px solid #9fd1dd;
+}
+.button textarea:hover {
+	color: #9fd1dd;
+}
+</style><div id="THIS_ONE">
+
+<div id="main">
+
+<div id="headercontainer"><div id="header">
+
+<div id="title" style="position: relative;">
+<h1 class="shadow" style="position: absolute;">まち</h1>
+<h1 class="title" style="position: absolute;">まち</h1>
+<h1 class="hidden">まち</h1>
+
+
+
+</div>
+
+<div id="descr"><p><b>Disclaimers:</b> unsettling images, violence, broken japanese</p><br><br><a href="#four"><img src="http://i.imgur.com/MFPYP1e.png"></a><br><br><a href="#one"><img src="http://i.imgur.com/auFUIKn.png"></a><a href="#two"><img src="http://i.imgur.com/siL0B81.png"></a><a href="#three"><img src="http://i.imgur.com/XLUrkwE.png"></a>
+</div>
+
+</div></div>
+
+<center><div id="contentcontainer">
+<div id="content">
+
+<a name="one"></a>
+<div class="section1"><div class="pad">
+
+<h1 style="border-radius: 5px;">ようこそ</h1>
+<center><img src="http://i.imgur.com/NtTROFE.gif" style="width: 190px;"></center>
+
+<div id="teal" style="width: 200px; display: inline-block; margin: 10px auto; border-radius: 5px; padding-left: 10px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">
+Hello and welcome to <a href="/petlookup.phtml?pet=CandyMachi">Machi's</a> page, I'm <a href="/~abyss_citadel">Abyss</a> and here you can find more about Machi, his character and the inspirations behind it! You can also see my whole character directory by clicking <a href="/~_suco_">here</a>.</div>
+
+<center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+
+<h1 style="border-radius: 5px;">アップデイト</h1>
+
+<div id="blue" style="width: 180px; display: inline-block; margin: 10px auto; border-radius: 5px; padding-top: 5px; padding-right: 40px; padding-bottom: 5px;">
+<ul><li><b>07/11/2020</b> - Started editing the page's layout;</li>
+<li><b>08/11/2020</b> - Finished base layout coding;</li></ul></div>
+
+<center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+
+<h1 style="border-radius: 5px;">けいかく</h1>
+
+<div id="purple" style="width: 200px; display: inline-block; margin: 10px auto; border-radius: 5px; padding-left: 10px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">
+☒ <strike>Layout base</strike><br>
+☐ Pet Lookup<br>
+☐ Custom<br>
+☐ Playlist<br>
+☒ <strike>Button / Quilt Patch</strike><br>
+☒ <strike>Pet Goals</strike><br>
+☒ <strike>Wishlist</strike><br>
+☐ Affiliates<br>
+☒ <strike>Dividers</strike><br>
+☐ Adoptables</div>
+<center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+
+</div></div>
+
+<a name="two"></a>
+<div class="section2"><div class="pad">
+
+<h1 style="border-radius: 5px;">ぺっと</h1>
+
+<div id="teal" style="width: 200px; display: inline-block; margin: 10px auto; border-radius: 5px; padding-left: 10px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">
+<img src="http://pets.neopets.com/cpn/candymachi/1/3.png" class="left"><b>Name:</b> CandyMachi<br><b>Color:</b> Halloween<br><b>Species:</b> Bori<br><b>Type:</b> Converted<br><b>Creation Date:</b> 13th October 2020<br>
+♎︎<b>☉</b> ♍︎<b>☽</b> ♓︎<b>↑</b></div>
+
+<center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+
+<div id="blue" style="width: 200px; display: inline-block; margin: 10px auto; border-radius: 5px; padding-left: 10px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">
+<b>Goals</b><br>
+- <strike>Paint as Halloween</strike><br>
+- Cross-paint as Candy<br>
+- Make a few more customs<br>
+- Get 5 Gold BC trophies<br>
+- Chose petpet / petpetpet</div>
+
+<center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+
+<div id="purple" style="width: 200px; display: inline-block; margin: 10px auto; border-radius: 5px; padding-left: 10px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">
+<b>Customizations:</b><br><img src="http://openneo-uploads.s3.amazonaws.com/outfits/002/203/818/small_preview.png" style="width: 80px;"></div>
+
+<center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+
+<div id="teal" style="width: 200px; display: inline-block; margin: 10px auto; border-radius: 5px; padding-left: 10px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">
+<b>Badges</b><br><a href="/~Fogg"><img src="http://i.imgur.com/pwehVFb.png" title="I was created by my owner!" border="0" width="80"></a></div>
+
+<center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+
+<div id="blue" style="width: 200px; display: inline-block; margin: 10px auto; border-radius: 5px; padding-left: 10px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">
+<b>Wishlist:</b><br><center><img src="http://images.neopets.com/items/mall_bg_nightcemetary.gif" title="Cemetery at Night Background" style="width: 50px;"><img src="http://images.neopets.com/items/mall_garl_creepypuppet.gif" title="Creepy Puppet Garland" style="width: 50px;"><img src="http://images.neopets.com/items/clo_ucy20_usuki_fur.gif" title="Usuki Doll Fur" style="width: 50px;"><img src="http://images.neopets.com/items/mall_acc_blowgum.gif" title="Popping Bubble Gum" style="width: 50px;"><img src="http://images.neopets.com/items/gif_ddy14_meepit_angryeye.gif" title="Angry Meepit Eyes" style="width: 50px;"><img src="http://images.neopets.com/items/mall_claw_creepypulltoy.gif" title="Carved Meowclops Pull Along" style="width: 50px;"><img src="http://images.neopets.com/items/mall_fg_dirtzombie.gif" title="Dirt Patch of the Undead" style="width: 50px;"><img src="http://images.neopets.com/items/mall_acc_markingspink.gif" title="Dyeworks Pink: Magical Golden Markings" style="width: 50px;"><img src="http://images.neopets.com/items/mall_claw_poisonbottle.gif" title="Deadly Poison Bottle" style="width: 50px;"><img src="http://images.neopets.com/items/mall_clo_frillyvicshirt.gif" title="Frilly Elegant Blouse" style="width: 50px;"><img src="http://images.neopets.com/items/paintbrush_candy.gif" title="Candy Paint Brush" style="width: 50px;"></center>
+</div>
+
+<center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+
+<h1 style="border-radius: 5px;">きゃらくた</h1>
+
+<center><img src="http://i.imgur.com/hMQmIv8.gif" class="left"><img src="http://i.imgur.com/hMQmIv8.gif" class="right"><i>(drag and drop the images on your address bar to see them)</i></center>
+
+<div style="width: 150px; display: inline-block; margin: 10px auto; background: #addde7; border: 1px solid #9fd1dd; border-radius: 5px;">
+<div style="text-align: left; display: inline-block; padding-left: 10px; padding-top: 5px;">
+<img src="http://i.imgur.com/c9AtjBV.gif"></div>
+<div style="text-align: left; display: inline-block; padding-left: 10px; padding-top: -5px;">
+▸  Machi Byoki<br>
+▸  びょき まち<br>
+▸  25<br>
+▸  He/Him<br>
+▸  Dark<br>
+▸  ♎︎<br></div></div><img src="http://i.imgur.com/l4jU3pW.png" class="right" style="width: 61px; height: 75px;" title="Machi quad ref"><center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+
+<div id="purple" style="width: 200px; display: inline-block; margin: 10px auto; border-radius: 5px; padding-left: 10px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">
+<b>Personality</b>
+</div>
+
+<center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+
+<div id="teal" style="width: 200px; display: inline-block; margin: 10px auto; border-radius: 5px; padding-left: 10px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">
+<b>Inspo</b><br>
+As someone who loves alternative and japanese street fashion with a touch of creepy cute, Machi is the culmination of that love! His biggest ties with real life fashion are mostly sweet lolita fashion and menhera.<br>
+Lolita is quite a well known style, but to be short and sweet, it's a subculture from Japan that is highly influenced by Victorian clothing and styles from the Rococo period with sweet lolita being a style of Lolita that contains features nearly exclusive to Lolita, it's also the most child-like of the styles, using many bows, ruffles and light colors to make up an outfit.<br>
+While menhera is a japanese slang term derived from "mental healther". It became the spark of a sickly cute aesthetic that takes the abiguous usage of the word "sick", like as an insult for something nonconformist, literally as reflection of the social stigma which still hides behind the surface of kawaii culture.<br>
+But, he also has some ties with an obscure art style, candy guro (which I don't recommend searching on poogle for...), which is an art style that tends to be more colourful, goopier, and sometimes "cuter" than normal guro art, it usually involves pastel and neon colour palettes.<br>
+His name is very much derived from that concept, with Candy obviously meaning candy and Machi meaning guro in japanese (and Byoki, his surname meaning sick also in japanese).
+</div>
+
+<center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+
+<h1 style="border-radius: 5px;">わたしにっついて</h1>
+
+<div id="blue" style="width: 200px; display: inline-block; margin: 10px auto; border-radius: 5px; padding-left: 10px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">
+My name is Abyss (you can see my portfolio clicking <a href="/~abyss_citadel">here</a>) and my pronouns are they/them, I'm a non-binary mortuary sciences student living in <b>Brazil</b>. I like writing, playing video games, cooking, collecting avatars, creating characters, photography and fashion. My favorite genre of media is horror, I love watching horror movies and playing horror themed games, and I would say my favorites in order are <b>Army of Darkness</b> and <b>Silent Hill 2</b>. In real life I have three cutesy little cats, Samara (10yo), Dothi (2yo) and Valeska (8mo) and a <a href="/userlookup.phtml?user=wglitch">significant other</a> that has been quite a light of hope in my life.<br>
+I've been on neopets since around 2009 and my journey with writing and creating characters began right here on this website! My first few characters were very inspired by (almost carbon copies of) <b>Twilight</b>, which, at the time, was very much my favorite book, but as I aged and was lead to explore other types of media I began to like other things, my writing style and my characters evolved alongside me and their stories were driven to be more dark and mature, which I began exploring off site and this prompted me to stay away from neopets for a few years (around 2012-2015), to not only explore my passion with more violent and real characters but also to hone my writing skilIs.
+</div>
+
+</div></div>
+
+<a name="three"></a>
+<div class="section3"><div class="pad">
+
+<h1 style="border-radius: 5px;">エステティック</h1>
+<center>moodboard here</center>
+
+<div id="blue" style="width: 200px; display: inline-block; margin: 10px auto; border-radius: 5px; padding-left: 10px; padding-top: 5px; padding-right: 10px; padding-bottom: 5px;">
+<center><img src="http://i.imgur.com/xKO4G6e.gif" class="left"><b>playlist</b><img src="http://i.imgur.com/xKO4G6e.gif" class="right"><br>
+Minagoroshi no Magic - Utsu-P<br>
+Caramelldansen - Caramell<br>
+Sweet Devil - Hachioji-P<br>
+Worldwide Torture - Jazmin Bean<br>
+Full Course for Candy Addicts - Machigerita</center>
+</div>
+
+<center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+
+<h1 style="border-radius: 5px;">あどぴてぶる</h1>
+<center>
+<img src="http://i.imgur.com/vhzc7S4.gif" class="left"><img src="http://i.imgur.com/0MUjUIo.gif" class="right"></center><br><b>Colored:</b><br><center>adoptables goes here</center><br><b>Customs:</b><br><center>customs goes here</center>
+<center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+
+<h1 style="border-radius: 5px;">あどぴてぃど</h1>
+<center><img src="http://i.imgur.com/hMQmIv8.gif" class="left"><img src="http://i.imgur.com/hMQmIv8.gif" class="right"><i>(drag and drop the images on your address bar to see them)</i></center><br><center><a href="/~xox"><img src="http://i.imgur.com/Qyuv3BV.png" style="height: 65px;"></a><img src="http://snarrflebark.files.wordpress.com/2017/11/halloweenbori.png" style="height: 65px;"><a href="http://www.neopets.com/~ArtAgency">
+<img src="http://i.imgur.com/UDo0kzR.png" style="height: 65px;" title="From Art Agency, with love!"></a>
+<a href="http://www.neopets.com/~kriz"><img src="http://i.imgur.com/YUjlP7m.png" style="height: 65px;"></a><a href="http://www.neopets.com/~kriz"><img src="http://i.imgur.com/oiKu5bp.png" style="height: 65px;"></a><a href="/~noirva"><img src="http://i.imgur.com/oaQbh33.gif" style="height: 65px;"></a><a href="/~monkey789813"><img src="http://i.imgur.com/Xx9C3uz.png" style="height: 65px;"></a><a href="http://www.neopets.com/~Pacuga"><img src="http://i.imgur.com/P1OYIl5.gif" style="height: 65px;"></a><a href="/~Jinraz"><img src="http://i.imgur.com/Bfd8aNZ.png" style="height: 65px;"></a><a href="http://www.neopets.com/~BoisterousBori"><img src="http://i.imgur.com/cwVpa6a.gif" style="height: 65px;"></a><a href="/~0yx"><img src="http://i.imgur.com/Kq0fP7S.png" style="height: 65px;"></a><a href="http://www.neopets.com/~TwoBears"><img src="http://i.imgur.com/TpB3z4Q.png" style="height: 65px;"></a><a href="/~petgod"><img src="http://i.imgur.com/tQFM7UH.png" style="height: 65px;"></a>
+</center>
+
+<center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+
+<h1 style="border-radius: 5px;">がれり</h1>
+<b>Art by Me:</b><br><center><img src="http://i.imgur.com/hMQmIv8.gif" class="left"><img src="http://i.imgur.com/hMQmIv8.gif" class="right"><i>(drag and drop the images on your address bar to see them)</i></center><br><center><img src="http://i.imgur.com/l4jU3pW.png" style="height: 100px;"></center><br><b>By Others:</b><br><center><img src="http://i.imgur.com/hMQmIv8.gif" class="left"><img src="http://i.imgur.com/hMQmIv8.gif" class="right"><i>(drag and drop the images on your address bar to see them)</i></center><br><center>art goes here</center>
+
+<center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+
+</div>
+</div>
+
+<a name="four"></a>
+<div class="section4"><div class="pad">
+
+<h1 style="border-radius: 5px;">リンクバクー</h1>
+<center><div class="button">
+          <br><img src="http://i.imgur.com/zxjPwx1.gif"><br><textarea style="border-radius: 5px;"><a href="/~candymachi"><img src="http://i.imgur.com/zxjPwx1.gif"></a></textarea></div><div class="button">
+          <img src="http://i.imgur.com/mFrUinc.gif"><br><textarea style="border-radius: 5px;"><a href="/~candymachi"><img src="http://i.imgur.com/mFrUinc.gif"></a></textarea></div></center>
+
+<center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+
+<h1 style="border-radius: 5px;">わたしのたのぺっと</h1>
+<center><a href="/~bjarka_"><img src="http://i.imgur.com/GOpNi8M.png"></a><a href="/~laepine"><img src="http://i.imgur.com/GSup1gs.gif"></a><a href="/~starphal"><img src="http://i.imgur.com/t1CXuYR.gif"></a><a href="/~hexperimentho"><img src="http://i.imgur.com/QMjp3vJ.gif"></a><a href="/~roginol"><img src="http://i.imgur.com/JzwMZaR.gif"></a></center>
+
+<center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+
+<h1 style="border-radius: 5px;">クレジット</h1>
+<ul><li>Based on Custom box code - Mind by <a>Milkyboos</a> on DA;</li>
+<li>Layout base code by <a href="/~Fiziwhig">Jinx</a>;</li>
+<li>Header and textarea base codes by <a href="/~berengier">Augment</a>;</li>
+<li>Additional code by <a href="/~cecira">lolwat</a>;</li>
+<li>Background by <a>Thensil</a> on DA;</li>
+<li>Bullet point by <a>Drawn-Mario</a> on DA;</li>
+<li>Button base by <a>KCProductions</a> on DA;</li>
+<li>Quilt Patch base by <a>NeverPhyleon</a> on DA.</li>
+<li>Graphics by <a>King-Lulu-Deer</a> on DA;</li>
+<li>All code edits done by me;</li></ul><center><a href="/~Fiziwhig"><img src="http://imgur.com/AKt1qdb.gif" border="0"></a><a href="/~berengier"><img src="http://i.imgur.com/1eA5tOJ.gif" border="0"></a></center>
+
+<center><img src="http://i.imgur.com/QZuQgOY.gif" style="width: 190px;"></center>
+</div></div>
+
+
+</div>
+
+</div></center></div></div>
